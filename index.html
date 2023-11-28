@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security Nutrition Level Questionnaire</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Software Development Security Nutrition Level Assessment</h1>
+
+        <!-- Dynamic Question Display -->
+        <div id="questionContainer">
+            <h2 id="sectionTitle"></h2>
+            <div id="questionText"></div>
+            <div id="questionOptions"></div>
+            <button onclick="submitAnswer()">Submit Answer</button>
+        </div>
+
+        <div id="evaluationResult"></div>
+
+        <!-- Navigation for Next Question/Section -->
+        <button id="nextQuestionBtn" onclick="displayNextQuestion()">Next Question</button>
+        <button id="nextSectionBtn" onclick="displayNextSection()" style="display:none;">Next Section</button>
+
+        <div id="finalResults" style="display:none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
