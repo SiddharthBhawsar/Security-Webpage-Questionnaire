@@ -35,3 +35,93 @@ button:hover {
     padding: 20px;
     background-color: #ddd;
 }
+/* Progress Bar Container */
+#progressBarContainer {
+    width: 100%;
+    background-color: #ddd;
+    margin-bottom: 10px; /* Add some space between the progress bar and the section list */
+}
+
+/* Progress Bar */
+#progressBar {
+    height: 20px;
+    background-color: #4CAF50;
+}
+
+/* Section List */
+#sectionList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox to lay out items horizontally */
+    overflow-x: auto; /* Enable horizontal scrolling for many items */
+}
+
+/* Section List Items */
+#sectionList li {
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-right: 10px; /* Space between items */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px; /* Optional: rounded corners */
+}
+
+/* Highlight Active Section */
+#sectionList li.active {
+    background-color: #180b0b;
+    border-color: #4CAF50;
+}
+
+
+.horizontal-section-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.horizontal-section-list li {
+    list-style: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.horizontal-section-list li.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Centering the container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Additional styling */
+h1 {
+    text-align: center;
+}
+
+#questionContainer {
+    margin-top: 20px;
+}
+
+#questionOptions {
+    margin-top: 10px;
+}
+.recommendation {
+    color: #007BFF; /* Change to your preferred color */
+    font-style: italic;
+    border: 1px solid #007BFF; /* Border color similar to the text color */
+    background-color: #E9F5FF; /* Light background for the message box */
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px; /* Rounded corners for the message box */
+    display: none; /* Hide by default */
+}
+

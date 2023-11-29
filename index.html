@@ -6,23 +6,38 @@
 </head>
 <body>
     <div class="container">
-        <h1>Software Development Security Nutrition Level Assessment</h1>
+        <header>
+            <h1>Software Development Security Nutrition Level Assessment</h1>
+            <nav>
+                <ul id="sectionList" class="horizontal-section-list">
+                    <!-- Sections will be populated by JavaScript -->
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Progress Bar -->
+            <div id="progressBarContainer">
+                <div id="progressBar"></div>
+            </div>
 
-        <!-- Dynamic Question Display -->
-        <div id="questionContainer">
-            <h2 id="sectionTitle"></h2>
-            <div id="questionText"></div>
-            <div id="questionOptions"></div>
-            <button onclick="submitAnswer()">Submit Answer</button>
-        </div>
+            <!-- Dynamic Question Display -->
+            <div id="questionContainer">
+                <h2 id="sectionTitle"></h2>
+                <div id="questionText"></div>
+                <div id="questionOptions"></div>
+                <button onclick="submitAnswer()">Submit Answer</button>
+            </div>
 
-        <div id="evaluationResult"></div>
+            <div id="evaluationResult"></div>
 
-        <!-- Navigation for Next Question/Section -->
-        <button id="nextQuestionBtn" onclick="displayNextQuestion()">Next Question</button>
-        <button id="nextSectionBtn" onclick="displayNextSection()" style="display:none;">Next Section</button>
+            <!-- Navigation for Next Question/Section -->
+            <div id="navigationButtons">
+                <button id="nextQuestionBtn" onclick="displayNextQuestion()" style="display:none;">Next Question</button>
+                <button id="nextSectionBtn" onclick="displayNextSection()" style="display:none;">Next Section</button>
+            </div>
 
-        <div id="finalResults" style="display:none;"></div>
+            <div id="finalResults" style="display:none;"></div>
+        </main>
     </div>
 
     <script src="script.js"></script>
